@@ -2,6 +2,7 @@ const Pic = ({picdata}) => {
     return (
         <div className="Pic">
         <h2>{picdata.title}</h2>
+        <h3>{picdata.date}</h3>
 
         {picdata.media_type === "image" ? 
             <img src={picdata.url} alt="" className="NasaPicture" onClick={()=>{
