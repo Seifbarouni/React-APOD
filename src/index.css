@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: black;
+  color: #d9d9d9;
+  background-color: #1b1b1b;
 }
 
 .Home {
@@ -16,24 +16,30 @@ body {
   padding: 10px;
   text-decoration: none;
   font-size: larger;
-  color: black;
-  background-color: white;
+  color: #1b1b1b;
+  background-color: #d9d9d9;
   border-radius: 15px;
 }
 .linkHome:hover {
-  border: 1px solid white;
-  background-color: black;
-  color: white;
+  border: 1px solid #d9d9d9;
+  background-color: #1b1b1b;
+  color: #d9d9d9;
 }
 
 .linkNasaPic:hover {
-  border: 1px solid white;
-  background-color: black;
-  color: white;
+  border: 1px solid #d9d9d9;
+  background-color: #1b1b1b;
+  color: #d9d9d9;
 }
 
 .Loading {
   text-align: center;
+  position: relative;
+  top: 150px;
+}
+.Loading img {
+  width: 80px;
+  height: 80px;
 }
 
 .Pic {
@@ -66,4 +72,9 @@ body {
 .PicInfo p {
   font-weight: bold;
   line-height: 1.8;
+}
+
+.PicInfo p::first-letter {
+  font-size: 20px;
+  font-weight: bolder;
 }
