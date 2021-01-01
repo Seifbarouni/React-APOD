@@ -1,8 +1,11 @@
 const Pic = ({picdata}) => {
     return (
         <div className="Pic">
-        <h2>{picdata.title}</h2>
-        <h3>{picdata.date}</h3>
+            <div className="title_date">
+            <h2>{picdata.title}</h2>
+            <h3>{picdata.date}</h3>
+            </div>
+        
 
         {picdata.media_type === "image" ? 
             <img src={picdata.url} alt="" className="NasaPicture" onClick={()=>{
@@ -13,8 +16,7 @@ const Pic = ({picdata}) => {
             title="space-vid"
             frameBorder="0"
             src={picdata.url}
-            gesture = "media"
-            allow= "encrypted-media"
+            allow="autoplay"
             allowFullScreen
             className="NasaVid"
            / >}
