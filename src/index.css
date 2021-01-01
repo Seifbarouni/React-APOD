@@ -44,6 +44,10 @@ body {
 
 .Pic {
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .NasaPicture,
@@ -51,7 +55,7 @@ body {
   height: 600px;
   align-self: center;
   object-fit: contain;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 .NasaPic {
@@ -65,7 +69,6 @@ body {
   left: 30px;
 }
 .PicInfo {
-  padding: 10px;
   width: 650px;
   text-align: center;
 }
@@ -77,4 +80,22 @@ body {
 .PicInfo p::first-letter {
   font-size: 20px;
   font-weight: bolder;
+}
+
+@media only screen and (max-device-width: 645px) {
+  .PicInfo {
+    width: 350px;
+    text-align: center;
+  }
+  .PicInfo p {
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  .NasaPicture,
+  .NasaVid {
+    height: 300px;
+    align-self: center;
+    object-fit: contain;
+    border: 3px solid white;
+  }
 }
