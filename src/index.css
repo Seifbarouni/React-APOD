@@ -20,16 +20,11 @@ body {
   background-color: #d9d9d9;
   border-radius: 15px;
 }
-.linkHome:hover {
-  border: 1px solid #d9d9d9;
-  background-color: #1b1b1b;
-  color: #d9d9d9;
-}
 
-.linkNasaPic:hover {
-  border: 1px solid #d9d9d9;
-  background-color: #1b1b1b;
-  color: #d9d9d9;
+.linkNasaPic:hover,
+.linkHome:hover {
+  background-color: #fffafa;
+  cursor: pointer;
 }
 
 .Loading {
@@ -55,7 +50,11 @@ body {
   height: 600px;
   align-self: center;
   object-fit: contain;
-  border: 2px solid white;
+  width: 700px;
+}
+.NasaPicture,
+.NasaVid:hover {
+  cursor: pointer;
 }
 
 .NasaPic {
@@ -70,7 +69,7 @@ body {
 }
 .PicInfo {
   width: 650px;
-  text-align: center;
+  text-align: left;
 }
 .PicInfo p {
   font-weight: bold;
@@ -94,8 +93,8 @@ body {
   .NasaPicture,
   .NasaVid {
     height: 300px;
+    width: 300px;
     align-self: center;
     object-fit: contain;
-    border: 3px solid white;
   }
 }
