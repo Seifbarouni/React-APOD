@@ -103,4 +103,7 @@ body {
     top: 0;
     left: 0;
   }
+  .title_date {
+    padding-top: 15px;
+  }
 }
