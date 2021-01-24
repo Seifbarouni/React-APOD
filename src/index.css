@@ -15,10 +15,11 @@ body {
 .linkHome {
   padding: 10px;
   text-decoration: none;
-  font-size: larger;
+  font-size: 16px;
   color: #1b1b1b;
   background-color: #d9d9d9;
-  border-radius: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
 }
 
 .linkNasaPic:hover,
@@ -96,5 +97,10 @@ body {
     width: 300px;
     align-self: center;
     object-fit: contain;
+  }
+  .linkHome {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
