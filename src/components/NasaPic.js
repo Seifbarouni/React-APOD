@@ -19,15 +19,15 @@ const NasaPic = () => {
         fetchData()
     }, [])
     return (
-        <>
-            <Link to="/" className="linkHome">Home</Link>
+        <div className="mt-4 flex flex-col items-center justify-center">
+            <Link to="/" className="lg:text-xl text-lg rounded-md bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2">Home</Link>
 
             <div className="NasaPic">
 
                 {!loading ? <Pic picdata={picdata} /> : <Loading>Loading...</Loading>}
 
             </div>
-        </>
+        </div>
     )
 }
 
